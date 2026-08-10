@@ -1,0 +1,64 @@
+# 1. Cria a venv (chamada 'venv')
+python -m venv venv
+
+# 2. Ativa ela (no Windows)
+venv\Scripts\activate
+# (no Mac/Linux)
+# source venv/bin/activate
+
+# 3. Instala o Flask (o servidor web)
+pip install flask
+
+# 4. Gera o arquivo com todas as dependências
+pip freeze > requirements.txt
+
+// _______________________________________________
+
+futebol_carreira/
+│
+├── app.py                      # ✅ ARQUIVO PRINCIPAL: Roda o servidor Flask
+├── requirements.txt
+├── .gitignore
+│
+├── models/                     # Lógica dos dados (igual antes)
+│   ├── __init__.py
+│   └── player.py               # Classe Jogador (atributos, treinos)
+│
+├── controllers/                # Regras do jogo (igual antes)
+│   ├── __init__.py
+│   └── game_controller.py      # Funções: treinar, jogar, evoluir
+│
+├── templates/                  # 🆕 AS TELAS HTML (o que você vê no browser)
+│   └── index.html              # Tela principal do jogo
+│
+└── static/                     # 🆕 Arquivos visuais (CSS, imagens)
+    └── style.css               # Deixa o jogo bonitinho
+
+
+
+
+
+
+
+
+
+
+
+________________
+
+    futebol_carreira/
+│
+├── app.py
+├── models/
+│   ├── __init__.py          # arquivo vazio
+│   └── player.py            # classe Jogador
+├── controllers/
+│   ├── __init__.py          # vazio
+│   └── game_controller.py   # (opcional por enquanto)
+├── templates/
+│   └── index.html
+├── static/
+│   └── style.css
+├── venv/
+├── requirements.txt
+└── .gitignore
