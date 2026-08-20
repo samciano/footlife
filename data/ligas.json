@@ -1,0 +1,53 @@
+{
+  "_comentario": "Estrutura editável de ligas. Adicionar uma nova liga = adicionar um novo objeto aqui. 'clubesIds' referencia os ids definidos em clubes.json.",
+  "ligas": [
+    {
+      "id": "premier_league",
+      "nome": "Premier League",
+      "pais": "Inglaterra",
+      "divisao": 1,
+      "formato": "pontos_corridos_returno_duplo",
+      "clubesIds": ["arsenal", "aston_villa", "chelsea", "liverpool", "man_city", "man_united", "newcastle", "tottenham", "west_ham", "brighton"]
+    },
+    {
+      "id": "efl_championship",
+      "nome": "EFL Championship",
+      "pais": "Inglaterra",
+      "divisao": 2,
+      "formato": "pontos_corridos_returno_duplo",
+      "clubesIds": ["arsenal", "aston_villa", "chelsea", "liverpool", "man_city", "man_united", "newcastle", "tottenham", "west_ham", "brighton"]
+    },
+    {
+      "id": "la_liga",
+      "nome": "La Liga",
+      "pais": "Espanha",
+      "divisao": 1,
+      "formato": "pontos_corridos_returno_duplo",
+      "clubesIds": ["real_madrid", "barcelona", "atletico_madrid", "sevilla", "real_sociedad", "villarreal", "athletic_bilbao", "real_betis", "valencia", "girona"]
+    },
+    {
+      "id": "serie_a",
+      "nome": "Serie A",
+      "pais": "Itália",
+      "divisao": 1,
+      "formato": "pontos_corridos_returno_duplo",
+      "clubesIds": ["juventus", "inter", "milan", "napoli", "roma", "lazio", "atalanta", "fiorentina", "bologna", "torino"]
+    },
+    {
+      "id": "bundesliga",
+      "nome": "Bundesliga",
+      "pais": "Alemanha",
+      "divisao": 1,
+      "formato": "pontos_corridos_returno_duplo",
+      "clubesIds": ["bayern", "dortmund", "leverkusen", "rb_leipzig", "union_berlin", "eintracht", "wolfsburg", "freiburg", "mainz", "stuttgart"]
+    },
+    {
+      "id": "ligue_1",
+      "nome": "Ligue 1",
+      "pais": "França",
+      "divisao": 1,
+      "formato": "pontos_corridos_returno_duplo",
+      "clubesIds": ["psg", "marseille", "lyon", "monaco", "lille", "rennes", "nice", "lens", "reims", "toulouse"]
+    }
+  ]
+}

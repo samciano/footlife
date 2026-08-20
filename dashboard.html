@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carreira</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="dashboard">
+    <!-- Menu Lateral (Esquerda) -->
+    <div class="card settings-card">
+      <div class="card-title">Status</div>
+      <ul class="settings-list" id="listaStatus"></ul>
+    </div>
+
+    <!-- Centro (Jogo Atual + Foco de treino) -->
+    <div class="center-column">
+      <div class="card current-match">
+        <div class="card-title">Hoje</div>
+        <div class="data-atual" id="txtDataAtual"></div>
+        <div class="status-partida" id="txtStatusDia"></div>
+
+        <div class="foco-select" id="blocoFoco" style="width:100%;">
+          <label style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;">Foco de desenvolvimento</label>
+          <select id="selectFoco" style="width:100%;margin-top:6px;padding:8px;border-radius:8px;background:rgba(255,255,255,.04);color:var(--text-main);border:1px solid var(--card-border);"></select>
+        </div>
+
+        <div class="match-controls" id="controlesDia"></div>
+      </div>
+
+      <div class="card banner-card" style="align-items:flex-start;">
+        <div class="card-title">Último evento</div>
+        <span id="txtBanner" style="color: var(--text-muted); font-size:0.85rem;"></span>
+      </div>
+    </div>
+
+    <!-- Coluna Direita (Perfil do jogador) -->
+    <div class="card profile-card">
+      <div class="avatar-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+        </svg>
+      </div>
+      <div class="card-title" id="txtNomeJogador" style="margin-bottom:0;"></div>
+      <div id="txtClubePos" style="color:var(--text-muted); font-size:0.8rem;"></div>
+
+      <div class="profile-subbox">
+        <div class="linha"><span>Overall</span><strong id="txtOverall"></strong></div>
+        <div class="linha"><span>Valor de mercado</span><strong id="txtValor"></strong></div>
+
+        <div style="margin-top:8px;">
+          <div class="linha"><span>Forma</span><span id="txtForma"></span></div>
+          <div class="barra"><div id="barraForma"></div></div>
+        </div>
+        <div style="margin-top:8px;">
+          <div class="linha"><span>Moral</span><span id="txtMoral"></span></div>
+          <div class="barra"><div id="barraMoral"></div></div>
+        </div>
+        <div style="margin-top:8px;">
+          <div class="linha"><span>Condição física</span><span id="txtCondicao"></span></div>
+          <div class="barra"><div id="barraCondicao"></div></div>
+        </div>
+        <div style="margin-top:8px;">
+          <div class="linha"><span>Potencial</span><span id="txtPotencial"></span></div>
+        </div>
+        <div id="blocoLesao" style="margin-top:10px; color:var(--risco-alto); font-size:0.8rem; display:none;"></div>
+      </div>
+    </div>
+
+    <!-- Fileira Inferior -->
+    <div class="bottom-row">
+      <div class="card dashed bottom-card">
+        <div class="card-title">Season Stats</div>
+        <ul id="listaStats"></ul>
+      </div>
+      <div class="card dashed bottom-card">
+        <div class="card-title">Próxima partida</div>
+        <ul id="listaProximaPartida"></ul>
+      </div>
+      <div class="card dashed bottom-card">
+        <div class="card-title">Notícias</div>
+        <ul id="listaNoticias"></ul>
+      </div>
+      <div class="card dashed bottom-card">
+        <div class="card-title">Inbox</div>
+        <ul id="listaInbox"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/pages/dashboard.js"></script>
+</body>
+</html>

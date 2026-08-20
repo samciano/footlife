@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carreira — Carregando</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="tela-loading">
+    <p>Carregando carreira...</p>
+  </div>
+  <script type="module">
+    import { carregarEstado } from "./js/core/gameState.js";
+    const estado = carregarEstado();
+    if (estado && estado.jogador) {
+      window.location.href = "dashboard.html";
+    } else {
+      window.location.href = "criacao.html";
+    }
+  </script>
+</body>
+</html>

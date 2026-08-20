@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Criação de Personagem</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="tela-central">
+    <div class="painel">
+      <h1>Criação de Personagem</h1>
+      <p class="subtitulo">Defina a identidade esportiva do seu atleta. Sem personalização visual nesta build — apenas dados de carreira.</p>
+
+      <div class="grade-2">
+        <div class="campo">
+          <label for="nome">Nome completo</label>
+          <input id="nome" type="text" placeholder="Ex: João Martins" maxlength="40">
+        </div>
+        <div class="campo">
+          <label for="nacionalidade">Nacionalidade</label>
+          <input id="nacionalidade" type="text" placeholder="Ex: Brasil" maxlength="30">
+        </div>
+      </div>
+
+      <div class="grade-2">
+        <div class="campo">
+          <label for="nascimento">Data de nascimento</label>
+          <input id="nascimento" type="date">
+        </div>
+        <div class="campo">
+          <label>Pé dominante</label>
+          <div class="grade-2" style="gap:8px;">
+            <div class="chip" data-pe="destro">Destro</div>
+            <div class="chip" data-pe="canhoto">Canhoto</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="campo">
+        <label>Posição principal</label>
+        <div id="grade-posicoes" class="grade-posicoes"></div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn" id="btnContinuar" disabled>Continuar</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/pages/criacao.js"></script>
+</body>
+</html>

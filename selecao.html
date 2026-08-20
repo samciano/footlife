@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selecionar Liga e Clube</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="tela-central">
+    <div class="painel">
+      <h1>Selecione a liga</h1>
+      <p class="subtitulo">Escolha em qual campeonato sua carreira vai começar.</p>
+
+      <div class="campo">
+        <div class="grade-posicoes" id="grade-ligas"></div>
+      </div>
+
+      <h1 style="margin-top:20px;">Selecione o clube</h1>
+      <p class="subtitulo">O elenco do clube é gerado automaticamente com jogadores fictícios.</p>
+      <div class="lista-clubes" id="lista-clubes"></div>
+
+      <div class="btn-row">
+        <button class="btn secundario" id="btnVoltar">Voltar</button>
+        <button class="btn" id="btnComecar" disabled>Começar carreira</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/pages/selecao.js"></script>
+</body>
+</html>

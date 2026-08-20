@@ -1,0 +1,18 @@
+{
+  "_comentario": "13 posições do jogo. 'papelOverall' mapeia cada posição para um dos 4 papéis usados no cálculo de Overall (sistema_overral.txt), já que o documento define pesos apenas para Atacante/Meio-campista/Defensor/Goleiro. Esse mapeamento é uma decisão de implementação e pode ser ajustado livremente aqui sem tocar em código.",
+  "posicoes": [
+    { "codigo": "GOL", "nome": "Goleiro",           "papelOverall": "Goleiro" },
+    { "codigo": "LE",  "nome": "Lateral Esquerdo",  "papelOverall": "Defensor" },
+    { "codigo": "LD",  "nome": "Lateral Direito",   "papelOverall": "Defensor" },
+    { "codigo": "ZAG", "nome": "Zagueiro",          "papelOverall": "Defensor" },
+    { "codigo": "VOL", "nome": "Volante",           "papelOverall": "Meio-campista" },
+    { "codigo": "MC",  "nome": "Meio-Campista",     "papelOverall": "Meio-campista" },
+    { "codigo": "MEI", "nome": "Meia Ofensivo",     "papelOverall": "Meio-campista" },
+    { "codigo": "MD",  "nome": "Meia Direito",      "papelOverall": "Meio-campista" },
+    { "codigo": "ME",  "nome": "Meia Esquerdo",     "papelOverall": "Meio-campista" },
+    { "codigo": "CA",  "nome": "Centroavante",      "papelOverall": "Atacante" },
+    { "codigo": "SA",  "nome": "Segundo Atacante",  "papelOverall": "Atacante" },
+    { "codigo": "PD",  "nome": "Ponta Direita",     "papelOverall": "Atacante" },
+    { "codigo": "PE",  "nome": "Ponta Esquerda",    "papelOverall": "Atacante" }
+  ]
+}
