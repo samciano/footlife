@@ -1,0 +1,63 @@
+SISTEMA DE ESCALAÇÃO DO TREINADOR
+
+O Sistema de Escalação é responsável por definir automaticamente os onze titulares e os jogadores do banco de reservas antes de cada partida. A escalação é determinada pela inteligência do treinador e considera tanto a qualidade técnica quanto o momento vivido por cada atleta.
+
+O objetivo do sistema é simular decisões realistas de um treinador, fazendo com que jogadores conquistem ou percam espaço de acordo com seu desempenho ao longo da temporada.
+
+Índice de Escalação
+
+Cada jogador recebe um Índice de Escalação, calculado antes de toda partida. Esse índice determina sua prioridade para ocupar a posição correspondente dentro da formação da equipe.
+
+O índice é composto por quatro fatores:
+
+Overall: 50%
+
+Moral com o treinador: 25%
+
+Forma: 15%
+
+Condição física: 10%
+
+Cada fator é convertido para uma escala de 0 a 100 antes da aplicação dos pesos.
+
+A fórmula é:
+
+Índice de Escalação = (Overall × 0,50) + (Moral × 0,25) + (Forma × 0,15) + (Condição Física × 0,10)
+
+O resultado final varia de 0 a 100.
+
+Critérios de seleção
+
+O treinador compara apenas jogadores capazes de atuar na mesma posição.
+
+Por exemplo, um Centroavante disputa vaga apenas com outros Centroavantes ou atletas aptos a desempenhar essa função. Da mesma forma, Laterais Esquerdos, Volantes e Goleiros possuem disputas independentes.
+
+O jogador com maior Índice de Escalação é escolhido como titular.
+
+Influência de cada fator
+
+Overall representa a qualidade técnica permanente do atleta e possui o maior peso da decisão.
+
+Moral com o treinador representa o nível de confiança que o técnico deposita no jogador. Atletas com boa relação tendem a receber prioridade em disputas equilibradas.
+
+Forma representa o desempenho recente nas últimas partidas. Um jogador vivendo grande fase pode conquistar espaço mesmo possuindo Overall ligeiramente inferior ao concorrente.
+
+Condição física representa o estado físico antes da partida. Jogadores muito desgastados possuem menor prioridade, permitindo que o treinador realize rotações naturalmente durante calendários congestionados.
+
+Banco de reservas
+
+Após definir os titulares, o sistema seleciona automaticamente os reservas utilizando o mesmo Índice de Escalação.
+
+Os jogadores mais bem classificados entre os não titulares passam a compor o banco de reservas, respeitando a necessidade de diferentes posições dentro do elenco disponível.
+
+Evolução da titularidade
+
+A escalação nunca é fixa durante a temporada.
+
+Boas atuações aumentam Forma e Moral, elevando naturalmente o Índice de Escalação. Da mesma forma, desempenhos ruins, ausência de treinamentos ou baixo rendimento reduzem a prioridade do jogador.
+
+Isso permite que um reserva conquiste a titularidade por mérito e que um titular perca espaço caso seu desempenho caia, sem necessidade de decisões roteirizadas.
+
+Objetivo do sistema
+
+O Sistema de Escalação transforma o desempenho diário do jogador em oportunidades concretas dentro da equipe. Cada treino, cada partida e cada nota recebida influenciam indiretamente a próxima escalação, criando uma progressão contínua baseada em mérito esportivo.
