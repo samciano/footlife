@@ -1,6 +1,7 @@
-- menu principal (ver saves, configurações, nova carreira), o jogador pode retornar ao menu principal durante a jogatina
+- menu principal (ver saves, configurações, nova carreira), o jogador pode retornar ao menu principal durante a jogatina;
 
 - usar cores dinâmicas na barra de condição física:
+
 0: Vermelho Escuro rgb(139, 0, 0)
 
 25: Laranja rgb(255, 140, 0)
@@ -9,6 +10,6 @@
 
 75: Verde Claro rgb(144, 238, 144)
 
-100: Verde Escuro rgb(0, 100, 0)
+100: Verde Escuro rgb(0, 100, 0);
 
 -
