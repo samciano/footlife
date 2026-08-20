@@ -1,0 +1,63 @@
+FLUXO DE GAMEPLAY
+
+O jogo é estruturado em um sistema de progressão diária. A unidade básica de tempo é 1 dia, e toda a carreira do jogador acontece através do avanço contínuo do calendário entre 1º de julho e 30 de junho da temporada.
+
+O objetivo da gameplay é administrar diariamente a evolução do atleta, equilibrando treinamento, recuperação, partidas e acontecimentos da carreira.
+
+Estrutura do ciclo diário
+
+Cada dia segue sempre o mesmo fluxo de interação:
+
+1. Verificação de eventos do dia
+
+Ao iniciar um novo dia, o jogo verifica automaticamente se existem acontecimentos programados no calendário. Esses eventos podem incluir partidas, treinamentos, mensagens na Inbox, notícias importantes, convocações para seleção, propostas de transferência ou outros acontecimentos relacionados à carreira.
+
+Caso existam múltiplos eventos, eles são apresentados na ordem cronológica.
+
+2. Decisão de treinamento
+
+Nos dias destinados a treino, o jogador deve decidir se realizará ou não a sessão de treinamento.
+
+O foco de desenvolvimento escolhido anteriormente permanece salvo e não precisa ser selecionado diariamente. O jogador apenas decide executar o treinamento e sua intensidade.
+
+As intensidades disponíveis são:
+
+Treino leve
+
+Treino normal
+
+Treino intenso
+
+Descanso
+
+Treinos mais intensos aceleram a evolução dos atributos, porém aumentam o desgaste físico e o risco de lesões. Descansar reduz a carga física, mas diminui o desenvolvimento do atleta.
+
+A ausência frequente de treinos também produz consequências ao longo da carreira, afetando principalmente a evolução e a percepção do treinador sobre o comprometimento do jogador.
+
+3. Execução do evento principal
+
+Após o treinamento, o jogo executa o principal compromisso do dia.
+
+Se houver uma partida, o jogador participa normalmente da simulação interativa. Se não houver jogo, o dia pode conter apenas atividades de recuperação, mensagens, mercado de transferências ou simplesmente terminar após o treino.
+
+4. Atualização dos sistemas
+
+Ao final do dia, o jogo atualiza automaticamente todos os sistemas dependentes do tempo, incluindo desgaste físico, ritmo de jogo, forma, potencial, recuperação, calendário e notícias.
+
+Em seguida, o jogador pode avançar para o próximo dia.
+
+Dias sem acontecimentos
+
+Dias que não possuem eventos relevantes continuam existindo dentro do calendário, mas possuem um fluxo extremamente rápido. O jogador realiza sua decisão de treinamento, o sistema atualiza os indicadores e o dia é encerrado imediatamente.
+
+Dessa forma, o calendário mantém continuidade temporal sem tornar a progressão lenta.
+
+Partidas
+
+Dias de partida substituem a rotina normal de treino. O compromisso principal passa a ser o jogo, que utiliza o Sistema de Eventos para gerar decisões específicas da posição do jogador.
+
+Após a partida, os sistemas de forma, desgaste, ritmo de jogo e estatísticas da temporada são atualizados automaticamente.
+
+Continuidade da carreira
+
+Todo o progresso do jogador acontece através da repetição desse ciclo diário. A evolução dos atributos depende da consistência dos treinamentos, o desenvolvimento da carreira depende das atuações nas partidas e o calendário conecta continuamente competições, seleção nacional, mercado de transferências, notícias e mensagens da Inbox em uma única linha temporal.

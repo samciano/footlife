@@ -1,0 +1,39 @@
+SISTEMA DE VALOR-BASE POR OVERALL
+
+O Valor-Base representa o valor inicial de mercado de um jogador determinado exclusivamente pelo seu Overall. Ele funciona como o ponto de partida para o cálculo posterior do valor de mercado completo.
+
+O Valor-Base considera somente o Overall do jogador. Idade, Forma, reputação e tendência de crescimento não fazem parte desse cálculo. Esses fatores são aplicados posteriormente como modificadores independentes no sistema de valor de mercado.
+
+A relação entre Overall e Valor-Base não é linear. Quanto maior o Overall, maior é a valorização obtida por cada ponto adicional. Isso representa a escassez de jogadores de nível elevado e o aumento da demanda por atletas considerados de elite.
+
+A escala de referência definida para o sistema é a seguinte.
+
+Overall 50 corresponde a um Valor-Base de €0,2 milhão.
+
+Overall 55 corresponde a um Valor-Base de €0,4 milhão.
+
+Overall 60 corresponde a um Valor-Base de €0,8 milhão.
+
+Overall 65 corresponde a um Valor-Base de €1,8 milhão.
+
+Overall 70 corresponde a um Valor-Base de €4 milhões.
+
+Overall 75 corresponde a um Valor-Base de €8 milhões.
+
+Overall 80 corresponde a um Valor-Base de €16 milhões.
+
+Overall 85 corresponde a um Valor-Base de €37 milhões.
+
+Overall 90 corresponde a um Valor-Base de €82 milhões.
+
+Overall 95 corresponde a um Valor-Base de €152 milhões.
+
+Overall 99 corresponde a um Valor-Base de €225 milhões.
+
+Esses valores funcionam como pontos de referência da escala. Quando o jogador possuir um Overall situado entre dois desses pontos, o sistema deve calcular um valor intermediário proporcionalmente.
+
+Por exemplo, um jogador com Overall 78 está entre Overall 75, cujo Valor-Base é €8 milhões, e Overall 80, cujo Valor-Base é €16 milhões. O sistema deve determinar o valor correspondente dentro desse intervalo.
+
+O objetivo dessa progressão é fazer com que jogadores de Overall elevado tenham uma valorização significativamente maior. A diferença entre um jogador de Overall 60 e um de Overall 65 é relativamente pequena em comparação com a diferença de valor entre um jogador de Overall 90 e um de Overall 95.
+
+O Valor-Base, portanto, representa apenas a avaliação inicial baseada na capacidade geral do jogador. O valor de mercado final será determinado posteriormente pela aplicação dos demais fatores definidos pelo sistema de mercado.

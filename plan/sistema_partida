@@ -1,0 +1,109 @@
+SISTEMA DE SIMULAÇÃO DE PARTIDAS E CLUBES
+
+O Sistema de Simulação de Partidas é responsável por determinar a força de cada equipe e calcular a probabilidade de vitória antes do início de uma partida. O sistema utiliza exclusivamente o Overall dos clubes como base para definir o equilíbrio do confronto, incorporando também a vantagem do mando de campo.
+
+O objetivo não é determinar placares, mas estabelecer a probabilidade de vitória, empate ou derrota que servirá como base para a simulação da partida.
+
+Overall do Clube
+
+O Overall do Clube representa a força coletiva da equipe titular.
+
+Ele é calculado através da média aritmética do Overall dos onze jogadores escalados como titulares.
+
+Overall do Clube = Soma do Overall dos 11 titulares ÷ 11
+
+Após o cálculo da média, aplica-se a vantagem do mando de campo.
+
+O clube mandante recebe um bônus fixo de +3 pontos de Overall.
+
+O clube visitante não recebe qualquer modificador.
+
+Esse ajuste representa fatores como apoio da torcida, familiaridade com o estádio e vantagem estatística de atuar em casa.
+
+Cálculo da Probabilidade de Vitória
+
+O cálculo da probabilidade ocorre em três etapas.
+
+Etapa 1 — Índice de Força
+
+Cada clube transforma seu Overall em um índice de força exponencial.
+
+Primeiramente, o Overall é dividido por 15.
+
+Em seguida, calcula-se 10 elevado ao resultado obtido.
+
+Força = 10^(Overall ÷ 15)
+
+Esse crescimento exponencial faz com que pequenas diferenças de Overall entre equipes fortes tenham impacto significativo na probabilidade de vitória.
+
+Exemplo:
+
+Real Madrid — Overall 88
+
+88 ÷ 15 = 5,86
+
+Força = 10^5,86 = 735.642
+
+Getafe — Overall 76
+
+76 ÷ 15 = 5,06
+
+Força = 10^5,06 = 116.591
+
+Etapa 2 — Chance Bruta de Vitória
+
+As forças dos dois clubes são somadas para obter a força total da partida.
+
+Força Total = Força Mandante + Força Visitante
+
+Depois, calcula-se a participação de cada equipe nessa força total.
+
+Chance Bruta = Força Individual ÷ Força Total
+
+No exemplo:
+
+Força total = 735.642 + 116.591 = 852.233
+
+Chance bruta do Real Madrid = 86,3%
+
+Chance bruta do Getafe = 13,7%
+
+Nesse momento, a soma das duas probabilidades é sempre 100%, pois o empate ainda não foi considerado.
+
+Etapa 3 — Ajuste para Empate
+
+Como partidas de futebol podem terminar empatadas, o sistema reserva aproximadamente 15% da probabilidade total para o empate.
+
+Os 85% restantes são redistribuídos proporcionalmente entre as duas equipes de acordo com suas chances brutas.
+
+No exemplo, o resultado final torna-se:
+
+Vitória do Real Madrid: 75%
+
+Empate: 15%
+
+Vitória do Getafe: 10%
+
+A soma das três probabilidades é sempre igual a 100%.
+
+Definição do Resultado
+
+Após calcular as probabilidades finais, o sistema realiza uma rolagem aleatória utilizando um número inteiro entre 1 e 100.
+
+Cada intervalo corresponde diretamente a um dos resultados possíveis.
+
+No exemplo anterior:
+
+Números de 1 a 75 representam vitória do Real Madrid.
+
+Números de 76 a 90 representam empate.
+
+Números de 91 a 100 representam vitória do Getafe.
+
+Dessa forma, equipes mais fortes possuem maior probabilidade de vencer, mas nunca eliminam completamente a possibilidade de empate ou de uma zebra, preservando a imprevisibilidade característica do futebol.
+
+Objetivo do sistema
+
+O Sistema de Simulação de Partidas utiliza uma curva exponencial para transformar diferenças de Overall em probabilidades realistas, evitando que equipes muito superiores vençam todas as partidas e permitindo que resultados improváveis continuem acontecendo de maneira natural ao longo das temporadas.
+
+O Overall coletivo, o mando de campo e o ajuste para empates formam a base estatística utilizada para simular todos os confrontos entre clubes no jogo.

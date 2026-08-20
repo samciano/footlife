@@ -1,0 +1,29 @@
+POSIÇÕES
+
+O jogo utiliza 13 posições:
+
+GOL — Goleiro
+
+LE — Lateral Esquerdo
+
+LD — Lateral Direito
+
+ZAG — Zagueiro
+
+VOL — Volante
+
+MC — Meio-Campista
+
+MEI — Meia Ofensivo
+
+MD — Meia Direito
+
+ME — Meia Esquerdo
+
+CA — Centroavante
+
+SA — Segundo Atacante
+
+PD — Ponta Direita
+
+PE — Ponta Esquerda

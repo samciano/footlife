@@ -1,0 +1,229 @@
+# Sistema de Overall e Pesos por Papel
+
+O Overall representa uma avaliação numérica da capacidade do jogador para exercer determinada função em campo. Ele é calculado a partir dos 18 atributos do jogador, mas cada posição atribui uma importância diferente a cada atributo.
+
+O sistema não utiliza uma média simples. Um atacante, por exemplo, não deve receber a mesma avaliação de um goleiro apenas porque possui a mesma média geral de atributos. A finalidade do peso é fazer com que o Overall reflita a relevância dos atributos para a função que o jogador desempenha.
+
+O Overall final varia de **0 a 99**.
+
+## Cálculo do Overall
+
+O cálculo segue o princípio de média ponderada:
+
+**Overall = Σ (Atributo × Peso)**
+
+Como os pesos são definidos em porcentagem e sua soma é sempre 100%, o resultado já estará na escala dos próprios atributos.
+
+Por exemplo, supondo que um jogador tenha Finalização 80 e que Finalização tenha peso de 20% para determinada posição:
+
+**80 × 0,20 = 16 pontos**
+
+Esse processo é realizado para os 18 atributos. Depois, todos os resultados são somados para obter o Overall.
+
+Os atributos com peso 0% não contribuem para o Overall daquela função.
+
+É importante que isso não signifique que um atributo com peso 0% seja inútil para o jogador. Ele simplesmente não é considerado relevante o suficiente para determinar o Overall daquela função específica. O atributo ainda pode ser utilizado por outras mecânicas do jogo.
+
+## Papéis considerados
+
+O sistema inicialmente possui quatro grandes papéis:
+
+**Atacante**
+
+**Meio-campista**
+
+**Defensor**
+
+**Goleiro**
+
+Cada papel possui sua própria distribuição de pesos.
+
+### Atacante
+
+O cálculo do Overall de um atacante prioriza a capacidade de finalizar, movimentar-se e participar de ações ofensivas no último terço do campo.
+
+Finalização: **20%**
+
+Velocidade: **12%**
+
+Controle de Bola: **10%**
+
+Drible: **10%**
+
+Posicionamento: **10%**
+
+Frieza: **8%**
+
+Força: **6%**
+
+Impulsão: **5%**
+
+Passe: **5%**
+
+Visão de Jogo: **4%**
+
+Agilidade: **4%**
+
+Resistência: **2%**
+
+Foco: **2%**
+
+Flexibilidade: **1%**
+
+Liderança: **1%**
+
+Comportamento: **0%**
+
+Desarme: **0%**
+
+Reflexos: **0%**
+
+Total: **100%**
+
+Nesse papel, Finalização é o atributo de maior peso. Velocidade, Controle de Bola, Drible e Posicionamento também possuem grande influência porque representam diferentes aspectos da capacidade ofensiva do atacante.
+
+### Meio-campista
+
+O cálculo do Overall de um meio-campista prioriza distribuição da bola, leitura do jogo, manutenção da posse e capacidade de participar do jogo durante diferentes momentos da partida.
+
+Passe: **18%**
+
+Visão de Jogo: **16%**
+
+Controle de Bola: **12%**
+
+Resistência: **10%**
+
+Foco: **8%**
+
+Desarme: **8%**
+
+Drible: **6%**
+
+Posicionamento: **5%**
+
+Finalização: **5%**
+
+Velocidade: **4%**
+
+Frieza: **3%**
+
+Liderança: **2%**
+
+Força: **1%**
+
+Agilidade: **1%**
+
+Comportamento: **1%**
+
+Impulsão: **0%**
+
+Flexibilidade: **0%**
+
+Reflexos: **0%**
+
+Total: **100%**
+
+A distribuição faz com que um jogador com excelente Passe e Visão de Jogo possa apresentar um Overall elevado mesmo sem possuir atributos ofensivos ou físicos excepcionais.
+
+### Defensor
+
+O cálculo do Overall de um defensor prioriza a capacidade de defender, disputar fisicamente, antecipar jogadas e manter concentração durante as ações defensivas.
+
+Desarme: **22%**
+
+Posicionamento: **15%**
+
+Força: **12%**
+
+Impulsão: **10%**
+
+Resistência: **8%**
+
+Foco: **8%**
+
+Passe: **6%**
+
+Velocidade: **5%**
+
+Controle de Bola: **4%**
+
+Liderança: **3%**
+
+Frieza: **3%**
+
+Agilidade: **2%**
+
+Visão de Jogo: **2%**
+
+Comportamento: **0%**
+
+Flexibilidade: **0%**
+
+Finalização: **0%**
+
+Drible: **0%**
+
+Reflexos: **0%**
+
+Total: **100%**
+
+Desarme e Posicionamento são os dois principais componentes do Overall defensivo. Força e Impulsão também possuem peso elevado, representando a importância das disputas físicas e aéreas.
+
+### Goleiro
+
+O cálculo do Overall de um goleiro possui uma distribuição completamente diferente das demais posições, priorizando Reflexos, Posicionamento, Agilidade, Impulsão e concentração.
+
+Reflexos: **30%**
+
+Posicionamento: **18%**
+
+Agilidade: **12%**
+
+Impulsão: **10%**
+
+Foco: **10%**
+
+Flexibilidade: **6%**
+
+Frieza: **4%**
+
+Liderança: **3%**
+
+Passe: **3%**
+
+Força: **2%**
+
+Comportamento: **2%**
+
+Visão de Jogo: **0%**
+
+Resistência: **0%**
+
+Velocidade: **0%**
+
+Finalização: **0%**
+
+Drible: **0%**
+
+Desarme: **0%**
+
+Controle de Bola: **0%**
+
+Total: **100%**
+
+Reflexos representam o maior componente individual do Overall de um goleiro, seguidos por Posicionamento e Agilidade.
+
+## Relação entre Overall e atributos
+
+O Overall deve ser entendido como uma **síntese da adequação do jogador à sua função**, e não como uma medida absoluta de qualidade.
+
+Isso permite que dois jogadores tenham o mesmo Overall e sejam completamente diferentes em campo.
+
+Por exemplo, dois meio-campistas podem possuir Overall 80. Um pode ter Passe 90, Visão de Jogo 88 e Controle de Bola 85, enquanto outro pode ter Desarme 90, Resistência 88 e Força 82. Os dois são avaliados como jogadores de nível semelhante para a função de meio-campista, mas apresentam características completamente diferentes.
+
+Essa diferenciação é importante para o sistema de arquétipos e estilos de jogo, porque o Overall não deve eliminar a individualidade dos jogadores.
+
+Também é possível que um jogador possua Overall diferente dependendo da função considerada. Um atleta com características predominantemente ofensivas pode apresentar, por exemplo, Overall 82 como atacante e 70 como defensor. Isso ocorre porque os mesmos 18 atributos são submetidos a distribuições de pesos diferentes.
+
+Portanto, o Overall deve ser calculado **dinamicamente de acordo com o papel utilizado**, enquanto os 18 atributos permanecem como as características fundamentais e independentes do jogador.

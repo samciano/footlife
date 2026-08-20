@@ -1,0 +1,42 @@
+GAME
+│
+├── PLAYERS
+│   ├── player
+│   ├── attributes
+│   ├── form
+│   ├── growth_trend
+│   ├── reputation
+│   └── career
+│
+├── CLUBS
+│   ├── club
+│   └── squad
+│
+├── FOOTBALL
+│   ├── competition
+│   ├── competition_state
+│   ├── match
+│   ├── match_event
+│   └── risk_test
+│
+├── TRANSFERS
+│   ├── transfer
+│   └── transfer_rumor
+│
+├── WORLD
+│   ├── news
+│   └── inbox_message
+│
+└── SYSTEMS
+    ├── position_weights
+    └── archetype
+
+
+
+
+
+
+
+
+
+    GOL, LE, LD, ZAG, VOL, MC, MEI, MD, ME, CA, SA, PD, PE
