@@ -12,4 +12,6 @@
 
 100: Verde Escuro rgb(0, 100, 0);
 
--
+- sistema de opções mais modular ainda, separando a situação em si das 3 opções possíveis 
+
+- os atributos a serem treinados podem fixados, 6 atributos por sessão, 1 de cada categoria, 
