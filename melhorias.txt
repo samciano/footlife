@@ -14,4 +14,6 @@
 
 - sistema de opções mais modular ainda, separando a situação em si das 3 opções possíveis 
 
-- os atributos a serem treinados podem fixados, 6 atributos por sessão, 1 de cada categoria, 
+- o treino é uma caixa fixa, o jogador só decide quais atributos ele quer treinar e os atributos selecionados ficam salvam até ele alterar novamente, o treinador decide a intensidade do treino 
+
+-
